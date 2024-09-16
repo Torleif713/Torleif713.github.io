@@ -181,7 +181,7 @@ if you do 100% the image becomes round*/
 .hero {
     background-color: #a6dfe5;
     /*if the image doesn\t load you can still see the white text*/
-    background-image: url("../image/website_image.png");
+    background-image: url("/image/website_image.png");
     /*you look where your image is in your folders on the left hand side*/
     color: white;
     text-align: center;
