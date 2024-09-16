@@ -1,0 +1,350 @@
+body {
+    /* background-color: burlywood; */
+    background-color:  rgb(7, 1, 43);
+    font-family: "Open Sans" Helvetica, Arial, sans-serif;
+    margin: 0px;
+    font-size: 1.5vw;
+    /* border: 10px solid burlywood; */
+    
+}
+/* vw means viewpoint width means what?
+this is better than pixel, because it resizes the entire screen*/
+
+#logo {
+     /* changed this from h1 into logo/ #logo to refer to the webiste logo/header,
+      since I gave it an id in the index.html document */
+    margin: 0px; 
+    padding: 8px;
+    font-family: "Open Sans"; 
+    /*Fredoka One was imported into index.html and sans-serif is part of the program 
+    (could use other standard fonts as well)*/ 
+    /*could I use the Vox font?*/
+    
+    width: auto;
+     /*new changed from 16% or something
+     and height completley new added*/
+    border-radius: 40%;
+    /*width makes the logo smaller or bigger*/
+    /*I removed the shadow, it would be coded like this box/shadow: 10px 10px 15px 5px black*/
+    
+    
+}
+
+
+ul {
+    margin-bottom: 0px; margin-top: 0px;
+}
+
+h4 {
+    margin-bottom: 0px;
+}
+
+body> header {
+    /* background-color: rgb(57, 78, 133); */
+    background-color:  rgb(7, 1, 43);
+    color: white;
+    /* this is how you write a quote, every programming language has a different way*/
+    /* alt shift arrow down is copy paste something down, or simply copy paste*/
+    /* the color is the color of the header text*/
+    display: flex;
+    font-size: 13px;
+    /*new*/
+    min-height: 10vh;
+    /*new is auto instead of height: 15vh;*/
+    /*making the display and flex within the body header means that 
+    the menu (Home, About Us, Contact) moves to the right of the logo, rather than underneath*/
+    /*vh is viewheight*/
+    align-items: center;
+    /*it brings the logo and menu more central kind of*/
+    justify-content: space-around;
+    
+}
+
+#nav-ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#nav-ul > li {
+    padding: 1px;
+    /*this is around the menu buttons in your webiste to create more space between them*/
+    margin: 1px;
+    /*also to create more space around the menu buttons*/
+    text-transform: uppercase;
+}
+
+body>header>nav>ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbutton {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    /*the padding makes the anchors a bigger in clickable surface for the user*/
+    border: 1px solid white;
+    /*this is really cool, makes the border of the Menu Buttons visable, 
+    so you can see where you can click*/
+    border-radius: 10%;
+    /*this makes the menu buttons rounder*/
+    }
+
+body > main article {
+    width: 95%;
+    margin: auto;
+/*this is to make the text paragraphs more central
+auto makes it centered, width is space from the sides?*/
+}
+
+#main-content {
+    display: flex;
+    /*this makes the Filter by month and by category move to the right of articles, 
+    I don't understand why the articles don't move
+    wait I get it
+    because it seperates the main two things in the main-content, as in the div from the aside*/
+    justify-content: space-around;
+    /*this combined with the #main-content>div mkaes the aside area more spacious I think*/
+}
+
+#main-content > div {
+    width: 100%;
+}
+
+.sideoptions {
+    color: white;
+    text-decoration: none;
+    line-height: 2;
+
+}
+
+aside {
+    width: 20%;
+}
+
+h2 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+/*To center
+Usually have to find where it is located and then center it there
+-in this case inside the form and inside h2
+*/
+
+body> footer {
+    background-color: rgb(255, 145, 0);
+    display: flex;
+}
+
+/*img {
+    border-radius: 100%;
+}*/
+/*this makes the image rounder, 10% is only making the edges smooth and round, 
+if you do 100% the image becomes round*/
+
+#footer-ul{
+    display: flex;
+    list-style: none;
+    /*made the footer flexbox*/
+}
+
+#footer-ul > div > li {
+    margin-left: 100px;
+    
+}
+
+#footer-ul > div > footer{
+    margin-left: 200px;
+   margin-top: 50px;
+   
+}
+
+#footer-ul > div > li > a {
+    color: white;
+    text-decoration: none;
+    /*changed the clickable buttons in footer to become white and with no black bullet point*/
+}
+
+
+
+.hero {
+    background-color: #a6dfe5;
+    /*if the image doesn\t load you can still see the white text*/
+    background-image: url("../day_5/image/website_image.png");
+    /*you look where your image is in your folders on the left hand side*/
+    color: white;
+    text-align: center;
+    
+    /*the color of the text infront of image*/
+    background-blend-mode: multiply;
+    /*background-blend-mode it blends the image with the background color 
+    multiply (darker) or lighten (lighter)*/
+    padding-top: 200px;
+    padding-bottom: 200px;
+    /*this is to make the text more in the middle
+    even if the browser is small on someones computer, 
+    the text responds and stays in the middle and uses the 200px paddings*/
+    background-repeat: no-repeat;
+    /*this makes sure the image only appears one time
+    the guy though turns off background-repeat: no-repeat; which prevents the image from repeating itself*/
+    background-size: cover;
+    /*the image will cover the entire background of the space intended for the image*/
+  
+    /*I make an outline: auto to make an outline around the background image*/
+    background-position: center;
+}
+
+.TrumpBrickWall {
+    /* color: white; */
+    text-align: center;
+    /* background-size: cover; */
+    /* padding-top: 200px;
+    padding-bottom: 200px; */
+    /* background-position: center; */
+    /* margin-top: 20px; */
+    justify-content: center;
+    align-items: center;
+    grid-area: policevsboy_image;
+    display: flex;
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    margin-top: 5%;
+    
+
+}
+
+.police_image_2 {
+    display: block; /*new add unnessecary? block or flex?*/
+    width: 100%;
+    object-fit: contain;
+    /*crops the image to fit, rather than stretch or squeeze it*/
+    margin: auto;
+    
+    
+}
+
+.card {
+    background: rgb(7, 7, 34);
+    padding: 2rem 2rem 2rem 2rem;
+    /*card is the class of div in which the image is in the index.html code*/
+    grid-area: cardpolice_image;
+}
+
+.accountstatistics {
+    display: flex;
+    grid-area: statistics;
+    object-fit: contain;
+    margin: auto;
+    width: 100%;
+    
+}
+
+.PictureText {
+    font-size: 8vw;
+}
+
+.grid-container { 
+    display: grid;
+    gap: 2rem; 
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, fr);
+    /*grid-template-column: 100px 100px 100px; each number is a new column
+    or use grid-template column: 25% 25% 25% percentages each make a new column
+    can make rows or columns
+    or use fr units fr meaning fraction, so 1fr 1fr 1fr (means each one out of three)
+    or can put repeat (3, 100px) this is the same, but a different way of writing it*/
+    /* padding: 3rem;  */
+    background-color:  rgb(7, 1, 43);
+    /*max-width: auto;*/
+    /* border: 2px solid red; */
+    grid-template-areas: 
+    "cardpolice_image article1"
+    "article2 policevsboy_image"
+    "statistics article3"
+    ;
+}
+
+.testimonial1 {
+    grid-area: article1;
+    background-color: bisque;
+    display: block; /*new add unnessecary? block or flex?*/
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    
+    
+    
+}
+.testimonial2 {
+    grid-area: article2;
+    width: 100%;
+    height: 90%;
+    background-color: burlywood;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+    
+
+
+.testimonial3 {
+    grid-area: article3;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(233, 169, 86);
+}
+
+h3 {
+    text-align: center;
+}
+.subscribe-grid-container {
+    display: grid;
+    background-color: rgb(7, 1, 43);
+    /* margin-left: 2rem; */
+    gap: 3rem;  
+    padding: 3rem;
+    width: 100%;
+    /* border: 2px solid red; */
+    grid-template-columns: 45% 40%;
+    
+    grid-template-areas: 
+    "subscribe form "
+}
+
+.subscribe {
+    grid-area: subscribe;
+    background-color: rgb(7, 1, 43);
+    text-align: center;
+    padding: 3rem;
+    object-fit: contain;
+    display: block;
+    
+    color: white;
+    
+}
+
+.form {
+    grid-area: form;
+    color: white;
+    background:  rgb(7, 1, 43);
+    margin: auto;
+    padding: 10px; 
+    padding-left: auto;
+   
+    
+
+}
