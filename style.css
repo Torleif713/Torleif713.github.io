@@ -30,9 +30,7 @@ this is better than pixel, because it resizes the entire screen*/
     
 }
 
-.alt {
-    color: white;
-}
+
 
 ul {
     margin-bottom: 0px; margin-top: 0px;
@@ -208,7 +206,7 @@ if you do 100% the image becomes round*/
 }
 
 .TrumpBrickWall {
-    /* color: white; */
+    color: white; 
     text-align: center;
     /* background-size: cover; */
     /* padding-top: 200px;
